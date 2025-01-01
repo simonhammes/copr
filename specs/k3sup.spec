@@ -14,7 +14,7 @@ k3sup is a light-weight utility to get from zero to KUBECONFIG with k3s on any l
 All you need is ssh access and the k3sup binary to get kubectl access immediately.
 
 %prep
-# Do not use %autosetup since k3sup is delivered as a binary (and not as a .tar.gz)
+# Do not use autosetup since k3sup is delivered as a binary (and not as a .tar.gz)
 cp %{SOURCE0} .
 
 %install
