@@ -1,6 +1,7 @@
 %global debug_package %{nil}
 
 Name: starship
+# renovate: datasource=github-releases depName=starship/starship
 Version: 1.21.1
 Release: 1%{?dist}
 Summary: The minimal, blazing-fast, and infinitely customizable prompt for any shell

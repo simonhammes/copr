@@ -1,6 +1,7 @@
 %global debug_package %{nil}
 
 Name: k3sup
+# renovate: datasource=github-releases depName=alexellis/k3sup
 Version: 0.13.6
 Release: 1%{?dist}
 Summary: Bootstrap K3s over SSH in < 60s
