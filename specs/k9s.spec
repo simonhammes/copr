@@ -6,7 +6,7 @@ Version: 0.32.7
 Release: 1%{?dist}
 Summary: Kubernetes CLI To Manage Your Clusters In Style
 
-License: MIT
+License: Apache-2.0
 URL: https://github.com/derailed/k9s
 Source: %{url}/releases/download/v%{version}/%{name}_Linux_amd64.tar.gz
 
