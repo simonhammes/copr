@@ -1,0 +1,15 @@
+name: CI
+
+on: push
+
+jobs:
+  rpmlin:
+    name: rpmlint
+    runs-on: ubuntu-24.04
+    container: fedora:41
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install rpmlint
+      run: dnf install -y rpmlint
+    - name: rpmlint
+      run: rpmlint specs/ --strict
