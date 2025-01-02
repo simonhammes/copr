@@ -20,6 +20,8 @@ It also provides building blocks and describe customizations for a CI/CD pipelin
 # Do not use autosetup since skaffold is delivered as a binary (and not as a .tar.gz)
 cp %{SOURCE0} .
 
+%build
+
 %install
 install -p -D skaffold-linux-amd64 %{buildroot}%{_bindir}/%{name}
 

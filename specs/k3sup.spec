@@ -18,6 +18,8 @@ All you need is ssh access and the k3sup binary to get kubectl access immediatel
 # Do not use autosetup since k3sup is delivered as a binary (and not as a .tar.gz)
 cp %{SOURCE0} .
 
+%build
+
 %install
 install -p -D %{name} %{buildroot}%{_bindir}/%{name}
 

@@ -16,6 +16,8 @@ K9s provides a terminal UI to interact with your Kubernetes clusters. The aim of
 %prep
 %autosetup -c
 
+%build
+
 %install
 install -p -D %{name} %{buildroot}%{_bindir}/%{name}
 

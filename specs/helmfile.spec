@@ -22,6 +22,8 @@ To avoid upgrades for each iteration of helm, the helmfile executable delegates 
 %prep
 %autosetup -c
 
+%build
+
 %install
 install -p -D %{name} %{buildroot}%{_bindir}/%{name}
 
