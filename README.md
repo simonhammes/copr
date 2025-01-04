@@ -15,3 +15,9 @@ sudo dnf install rpmdevtools
 spectool -Rg $FILE
 rpmbuild -ba $FILE
 ```
+
+## Renovate
+
+```bash
+npx renovate --platform=local
+```
