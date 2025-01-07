@@ -21,3 +21,7 @@ rpmbuild -ba $FILE
 ```bash
 npx renovate --platform=local
 ```
+
+## Resources
+
+- <https://hobo.house/2017/09/03/automate-rpm-builds-from-git-sources-using-copr/>
