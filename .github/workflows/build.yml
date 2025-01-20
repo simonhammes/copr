@@ -1,0 +1,27 @@
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    # TODO
+    # container: fedora:41
+    steps:
+    - uses: actions/checkout@v4
+    - name: Get changed .spec files
+      id: changed-files
+      uses: tj-actions/changed-files@v45
+      with:
+        files: specs/*.spec
+    - name: List files
+      if: steps.changed-files.outputs.any_changed == 'true'
+      env:
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+      run: |
+        for file in ${ALL_CHANGED_FILES}; do
+          echo "$file was changed"
+        done
