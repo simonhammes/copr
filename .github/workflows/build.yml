@@ -11,8 +11,8 @@ jobs:
     container: fedora:41
     steps:
     - uses: actions/checkout@v4
-    - name: Install rpmdevtools
-      run: dnf install -y rpmdevtools
+    - name: Install dependencies
+      run: dnf install -y git rpmdevtools
     - name: Get changed .spec files
       id: changed-files
       uses: tj-actions/changed-files@v45
