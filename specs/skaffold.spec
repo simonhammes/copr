@@ -2,7 +2,7 @@
 
 Name: skaffold
 # renovate: datasource=github-releases depName=GoogleContainerTools/skaffold
-Version: 2.13.2
+Version: 2.14.0
 Release: 1%{?dist}
 Summary: Easy and Repeatable Kubernetes Development
 
