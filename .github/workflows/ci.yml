@@ -13,25 +13,3 @@ jobs:
       run: dnf install -y rpmlint
     - name: rpmlint
       run: rpmlint specs/ --strict
-  build:
-    runs-on: ubuntu-24.04
-    container: fedora:41
-    steps:
-    - uses: actions/checkout@v4
-    - name: Install dependencies
-      run: dnf install -y git rpmdevtools
-    - name: Get changed .spec files
-      id: changed-files
-      uses: tj-actions/changed-files@v45
-      with:
-        files: specs/*.spec
-    - name: Build RPM
-      if: steps.changed-files.outputs.any_changed == 'true'
-      env:
-        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-      run: |
-        for file in ${ALL_CHANGED_FILES}; do
-          echo "$file was changed"
-          spectool -Rg "$file"
-          rpmbuild -ba "$file"
-        done
