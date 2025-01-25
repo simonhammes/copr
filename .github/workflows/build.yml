@@ -18,7 +18,7 @@ jobs:
       uses: tj-actions/changed-files@v45
       with:
         files: specs/*.spec
-    - name: List files
+    - name: Build RPM
       if: steps.changed-files.outputs.any_changed == 'true'
       env:
         ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
