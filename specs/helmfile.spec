@@ -13,6 +13,8 @@ Source: %{url}/releases/download/v%{version}/%{name}_%{version}_linux_amd64.tar.
 %description
 Helmfile is a declarative spec for deploying helm charts. It lets you...
 
+Test
+
 - Keep a directory of chart value files and maintain changes in version control.
 - Apply CI/CD to configuration changes.
 - Periodically sync to avoid skew in environments.
