@@ -21,5 +21,7 @@ K9s provides a terminal UI to interact with your Kubernetes clusters. The aim of
 %install
 install -p -D %{name} %{buildroot}%{_bindir}/%{name}
 
+%check
+
 %files
 %{_bindir}/%{name}

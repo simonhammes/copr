@@ -39,6 +39,8 @@ install -p -D %{name} %{buildroot}%{_bindir}/%{name}
 install -pvD -m 0644 %{name}.bash %{buildroot}%{bash_completions_dir}/%{name}
 install -pvD -m 0644 _%{name} %{buildroot}%{zsh_completions_dir}/_%{name}
 
+%check
+
 %files
 %doc CONFIGURATION.md
 %{_bindir}/%{name}
