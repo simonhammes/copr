@@ -23,5 +23,7 @@ cp %{SOURCE0} .
 %install
 install -p -D %{name}-linux-amd64 %{buildroot}%{_bindir}/%{name}
 
+%check
+
 %files
 %{_bindir}/%{name}

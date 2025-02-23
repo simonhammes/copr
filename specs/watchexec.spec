@@ -25,5 +25,7 @@ Example use cases:
 %install
 install -p -D %{name}-%{version}-x86_64-unknown-linux-gnu/%{name} %{buildroot}%{_bindir}/%{name}
 
+%check
+
 %files
 %{_bindir}/%{name}
