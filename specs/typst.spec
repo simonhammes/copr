@@ -30,5 +30,7 @@ Typst has:
 ls -Al
 install -p -D %{name}-x86_64-unknown-linux-musl/%{name} %{buildroot}%{_bindir}/%{name}
 
+%check
+
 %files
 %{_bindir}/%{name}

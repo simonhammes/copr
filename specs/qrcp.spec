@@ -21,5 +21,7 @@ Transfer files over Wi-Fi from your computer to a mobile device by scanning a QR
 %install
 install -p -D %{name} %{buildroot}%{_bindir}/%{name}
 
+%check
+
 %files
 %{_bindir}/%{name}
