@@ -2,7 +2,7 @@
 
 Name: qrcp
 # renovate: datasource=github-releases depName=claudiodangelis/qrcp
-Version: 0.11.4
+Version: 0.11.6
 Release: 1%{?dist}
 Summary: Transfer files over wifi from your computer to your mobile device by scanning a QR code without leaving the terminal
 
