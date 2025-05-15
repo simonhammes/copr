@@ -2,7 +2,7 @@
 
 Name: watchexec
 # renovate: datasource=github-releases depName=watchexec/watchexec
-Version: 2.3.0
+Version: 2.3.1
 Release: 1%{?dist}
 Summary: Executes commands in response to file modifications
 License: Apache-2.0
