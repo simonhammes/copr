@@ -6,7 +6,7 @@ jobs:
   rpmlin:
     name: rpmlint
     runs-on: ubuntu-24.04
-    container: fedora:42
+    container: fedora:43
     steps:
     - uses: actions/checkout@v4
     - name: Install rpmlint
