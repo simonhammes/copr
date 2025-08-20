@@ -2,7 +2,7 @@
 
 Name: k3sup
 # renovate: datasource=github-releases depName=alexellis/k3sup
-Version: 0.13.10
+Version: 0.13.11
 Release: 1%{?dist}
 Summary: Bootstrap K3s over SSH in < 60s
 
