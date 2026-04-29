@@ -2,7 +2,7 @@
 
 Name: dops
 # renovate: datasource=github-releases depName=Mikescher/better-docker-ps
-Version: 1.16
+Version: 1.17
 Release: 1%{?dist}
 Summary: better docker ps
 License: MIT
