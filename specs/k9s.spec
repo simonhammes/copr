@@ -2,7 +2,7 @@
 
 Name: k9s
 # renovate: datasource=github-releases depName=derailed/k9s
-Version: 0.50.18
+Version: 0.51.0
 Release: 1%{?dist}
 Summary: Kubernetes CLI To Manage Your Clusters In Style
 
