@@ -8,7 +8,7 @@
 
 ```bash
 # Setup
-distrobox create fedora --image fedora:41
+distrobox create fedora --image fedora:44
 distrobox enter fedora
 sudo dnf install rpmdevtools
 
