@@ -2,7 +2,7 @@
 
 Name: helmfile
 # renovate: datasource=github-releases depName=helmfile/helmfile
-Version: 1.5.4
+Version: 1.5.5
 Release: 1%{?dist}
 Summary: Declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases
 
