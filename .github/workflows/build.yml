@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-24.04
-    container: fedora:44
+    container: fedora:46
     steps:
     - uses: actions/checkout@v7
     - name: Install dependencies
