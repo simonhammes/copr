@@ -2,7 +2,7 @@
 
 Name: scc
 # renovate: datasource=github-releases depName=boyter/scc
-Version: 4.0.0
+Version: 4.1.0
 Release: 1%{?dist}
 Summary: scc is a very fast accurate code counter with complexity calculations and COCOMO estimates
 License: MIT
